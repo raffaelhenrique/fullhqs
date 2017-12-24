@@ -161,7 +161,18 @@ include "conecta.php";
                 </nav>
             </div>
             <!-- MENU RESPONSIVO -->
-            <button class="menu-btn">&#9776; Menu</button>
+            <div class="group-responsive">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.php">
+                            <img class="imglogo" src="imagens/logo.png">
+                        </a>
+                    </div>
+                    <div class="button-item">
+                        <button class="menu-btn">&#9776; Menu</button>
+                    </div>
+                </div>
+            </div>
              <!-- Pushy Menu -->
         <nav class="pushy pushy-left" data-focus="#first-link">
             <div class="pushy-content">
@@ -243,7 +254,8 @@ include "conecta.php";
 
 
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="js/pushy.min.js"></script>
+        <script type="text/javascript" src="js/pushy.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>

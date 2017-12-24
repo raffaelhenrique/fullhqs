@@ -2,11 +2,16 @@
 	//conectar com o banco de dados
 	try {
 		//dados do servidor
-		$servidor = "127.0.0.1";
-		$usuario = "root";
-		$senha = "";
-		$banco = "hq";  
-		$con = new PDO ( "mysql:host=$servidor;
+//		$servidor = "127.0.0.1";
+//		$usuario = "root";
+//		$senha = "";
+//		$banco = "hq";
+
+        $servidor = "localhost";
+        $usuario = "root";
+        $senha = "casaverde";
+        $banco = "hq";
+        $con = new PDO ( "mysql:host=$servidor;
 			dbname=$banco;
 			charset=utf8",
 			$usuario,
