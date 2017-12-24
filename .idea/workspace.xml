@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee63d47-547a-476f-9250-2660080cd161" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/scripts.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/conecta.php" afterPath="$PROJECT_DIR$/conecta.php" />
       <change beforePath="$PROJECT_DIR$/css/estilo.css" afterPath="$PROJECT_DIR$/css/estilo.css" />
+      <change beforePath="$PROJECT_DIR$/css/pushy.css" afterPath="$PROJECT_DIR$/css/pushy.css" />
+      <change beforePath="$PROJECT_DIR$/css/responsivo.css" afterPath="$PROJECT_DIR$/css/responsivo.css" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="estilo.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="estilo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/estilo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="335" column="22" lean-forward="false" selection-start-line="335" selection-start-column="22" selection-end-line="335" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="343" column="23" lean-forward="false" selection-start-line="343" selection-start-column="23" selection-end-line="343" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsivo.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/responsivo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -30,14 +40,17 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="172" column="26" lean-forward="false" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
+            <state relative-caret-position="405">
+              <caret line="240" column="29" lean-forward="true" selection-start-line="240" selection-start-column="29" selection-end-line="240" selection-end-column="29" />
               <folding>
-                <marker date="1514086638096" expanded="true" signature="2878:2890" ph="..." />
-                <marker date="1514086638096" expanded="true" signature="2981:2992" ph="..." />
-                <marker date="1514086638096" expanded="true" signature="4583:4618" ph="select * fro... editora" />
-                <marker date="1514086638096" expanded="true" signature="5534:5569" ph="select * fro... editora" />
-                <marker date="1514086638096" expanded="true" signature="6652:6687" ph="select * fro... editora" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1514089289156" expanded="true" signature="2954:2966" ph="..." />
+                <marker date="1514089289156" expanded="true" signature="3057:3068" ph="..." />
+                <marker date="1514089289156" expanded="true" signature="4659:4694" ph="select * fro... editora" />
+                <marker date="1514089289156" expanded="true" signature="5610:5645" ph="select * fro... editora" />
+                <marker date="1514089289156" expanded="true" signature="6728:6763" ph="select * fro... editora" />
+                <marker date="1514089289156" expanded="true" signature="9854:9889" ph="select * fro... editora" />
+                <marker date="1514089289156" expanded="true" signature="10740:10775" ph="select * fro... editora" />
               </folding>
             </state>
           </provider>
@@ -46,8 +59,18 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="252">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pushy.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/pushy.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="155" column="28" lean-forward="false" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -57,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/conecta.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -89,6 +112,13 @@
       <find>.conteudo-item &gt; div</find>
       <find>texto pos</find>
       <find>po</find>
+      <find>group-responsive</find>
+      <find>buscador</find>
+      <find>.group-responsivemargin-bottom: 20px;</find>
+      <find>.pushy a</find>
+      <find>.pushy</find>
+      <find>.group-responsive</find>
+      <find>.pushy-submenu button</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,12 +128,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/autor.php" />
-        <option value="$PROJECT_DIR$/css/responsivo.css" />
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/conecta.php" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/estilo.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/pushy.css" />
+        <option value="$PROJECT_DIR$/css/responsivo.css" />
       </list>
     </option>
   </component>
@@ -164,11 +195,6 @@
               <item name="fullhqs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="fullhqs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullhqs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,12 +235,12 @@
       <workItem from="1513995683058" duration="4305000" />
       <workItem from="1514050688765" duration="323000" />
       <workItem from="1514069779988" duration="132000" />
-      <workItem from="1514086185248" duration="1031000" />
+      <workItem from="1514086185248" duration="3222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5791000" />
+    <option name="totallyTimeSpent" value="7982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="686" extended-state="6" />
@@ -322,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/responsivo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postleitura.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
@@ -344,40 +363,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/conecta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="172" column="26" lean-forward="false" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
-          <folding>
-            <marker date="1514086638096" expanded="true" signature="2878:2890" ph="..." />
-            <marker date="1514086638096" expanded="true" signature="2981:2992" ph="..." />
-            <marker date="1514086638096" expanded="true" signature="4583:4618" ph="select * fro... editora" />
-            <marker date="1514086638096" expanded="true" signature="5534:5569" ph="select * fro... editora" />
-            <marker date="1514086638096" expanded="true" signature="6652:6687" ph="select * fro... editora" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conecta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="252">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/estilo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="335" column="22" lean-forward="false" selection-start-line="335" selection-start-column="22" selection-end-line="335" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="343" column="23" lean-forward="false" selection-start-line="343" selection-start-column="23" selection-end-line="343" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="240" column="29" lean-forward="true" selection-start-line="240" selection-start-column="29" selection-end-line="240" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1514089289156" expanded="true" signature="2954:2966" ph="..." />
+            <marker date="1514089289156" expanded="true" signature="3057:3068" ph="..." />
+            <marker date="1514089289156" expanded="true" signature="4659:4694" ph="select * fro... editora" />
+            <marker date="1514089289156" expanded="true" signature="5610:5645" ph="select * fro... editora" />
+            <marker date="1514089289156" expanded="true" signature="6728:6763" ph="select * fro... editora" />
+            <marker date="1514089289156" expanded="true" signature="9854:9889" ph="select * fro... editora" />
+            <marker date="1514089289156" expanded="true" signature="10740:10775" ph="select * fro... editora" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/pushy.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="155" column="28" lean-forward="false" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsivo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>

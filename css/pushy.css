@@ -9,16 +9,27 @@
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #191918;
+  background: #000;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */
 }
+.pushy-content ul li {
+  border-bottom: 1px solid #fff;
+}
+.pushy-content ul {
+  padding-left: 0;
+}
 .pushy a {
   display: block;
-  color: #b3b3b1;
+  color: #fff;
   padding: 15px 30px;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .pushy a:hover {
   color: #FFF;
@@ -135,11 +146,14 @@
 }
 .pushy-submenu button {
   width: 100%;
-  color: #b3b3b1;
-  padding: 15px 30px;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 15px 12px;
   text-align: left;
   background: transparent;
   border: 0;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .pushy-submenu button:hover {
   color: #FFF;

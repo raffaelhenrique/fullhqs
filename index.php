@@ -38,6 +38,7 @@ include "conecta.php";
         <link rel="stylesheet" type="text/css" href="css/responsivo.css">
         <link rel="stylesheet" type="text/css" href="colorbox.css">
         <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/pushy.css">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -171,6 +172,12 @@ include "conecta.php";
                     <div class="button-item">
                         <button class="menu-btn">&#9776; Menu</button>
                     </div>
+                    <div class="buscador-responsivo">
+                        <form name="buscador" method="post" action="index.php?pg=resultadobusca" novalidate>
+                            <input id="Buscar" name="buscar" type="text" class="form-control" placeholder="Buscar"/>
+                            <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="float:right;margin-top:-34px;margin-right:-43px;"><i class="glyphicon glyphicon-search"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
              <!-- Pushy Menu -->
@@ -178,41 +185,61 @@ include "conecta.php";
             <div class="pushy-content">
                 <ul>
                     <li class="pushy-submenu">
-                        <button id="first-link">Submenu 1</button>
+                        <button id="first-link" href="index.php">Home</button>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>HQS <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                         <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                            <?php
+                            $sql = "select * from editora order by nome";
+                            $consulta = $con->prepare($sql);
+                            // execute o sql
+                            $consulta->execute();
+                            while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
+                                // separa os dados
+                                $id = $dados->id;
+                                $nome = $dados->nome;
+                                echo "<li><a href='?pg=editora&id=$id'>$nome</a></li>";
+                            }
+
+                            ?>
                         </ul>
                     </li>
                     <li class="pushy-submenu">
-                        <button>Submenu 2</button>
+                        <button>PERSONAGENS <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                         <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                            <?php
+                            $sql = "select * from editora order by nome";
+                            $consulta = $con->prepare($sql);
+                            // execute o sql
+                            $consulta->execute();
+                            while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
+                                // separa os dados
+                                $id = $dados->id;
+                                $nome = $dados->nome;
+                                echo "<li><a href='?pg=editorapersonagens&id=$id'>$nome</a></li>";
+                            }
+
+                            ?>
                         </ul>
                     </li>
+                    <li class="pushy-link"><a href="?pg=post">POST</a></li>
+                    <li class="pushy-link"><a href="?pg=autor">AUTOR</a></li>
+                    <li class="pushy-link"><a href="?pg=noticia">NOTICIAS</a></li>
+                    <li class="pushy-link"><a href="?pg=cadastro">CADASTRO</a></li>
+                    <li class="pushy-link"><a href="?pg=contato">CONTATO</a></li>
                     <li class="pushy-submenu">
-                        <button>Submenu 3</button>
+                        <button>RANKING <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                         <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                            <?php
+                            echo "<li><a href='?pg=rankingpersonagens'>Personagens</a></li>";
+                            ?>
+                            <?php
+                            echo "<li><a href='?pg=rankinghqs'>HQS</a></li>";
+                            ?>
+
                         </ul>
                     </li>
-                    <li class="pushy-submenu">
-                        <button>Submenu 4</button>
-                        <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-link"><a href="#">Item 1</a></li>
-                    <li class="pushy-link"><a href="#">Item 2</a></li>
-                    <li class="pushy-link"><a href="#">Item 3</a></li>
-                    <li class="pushy-link"><a href="#">Item 4</a></li>
                 </ul>
             </div>
         </nav>
