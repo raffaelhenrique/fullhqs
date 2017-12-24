@@ -1,0 +1,279 @@
+/*para definir tudo como padrao e o (*) serve para tudo o que vc for colocar na tela*/
+* { 
+    margin: 0px; 
+    padding: 0px; 
+    text-decoration: none; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header{
+    float: left;
+    padding: 0px;
+    width: 100%;
+    z-index: 9999;
+
+}
+body {
+    font-size: 62.5%;
+}
+body {
+    padding:0px;
+    margin:0px;
+    background: #000000;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+    display: table;
+    background: #000000;
+}
+.menu {
+    width: 73%;
+    float: right;
+    position: relative;
+    margin-top: 70px;
+}
+.menu ul {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    list-style: none; }
+
+.menu ul li {
+    display: inline; }
+
+.menu ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 25px;
+    float: left;
+    font-size: 2.4em;
+    margin-top: 0px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    color: #000;
+    background: #FFFF00;
+    border-radius: 10px; 
+}
+/*menu dropdaw*/
+.menu li ul {
+    position: absolute;
+    display: none;
+}
+nav ul ul {
+    z-index: 9999;
+}
+ul > li > ul > li {
+    width: 100%;
+}
+.menu ul li {
+    position: relative;
+    float: left;
+}
+.menu ul > li > ul > li > a {
+    text-align: center;
+    border-bottom: 1px solid #FFFF00;
+    width: 100%;;
+}
+.menu ul li:hover > ul {
+    display: block;
+    position: absolute;
+    width: 202%;
+    float: left;
+    top: 87%;
+    left: -50%;
+    text-align: center;
+}
+
+.logo {
+    width: 27%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+.cabeçalho {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+}
+.cycle-slideshow img {
+    width: 100%;
+    position: relative;
+}
+/*EFEITO ZOOM IMAGEM HOVER*/
+
+.item1 {
+    position: relative;
+    border: 1px solid #333;
+    margin-top: 3.5%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.item1 img {
+    max-width: 100%;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.item1:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.aside-home {
+    width: 100%;
+    float: right;
+}
+.aside-home h1 {
+    position: absolute;
+    color: #fff;
+    font-family: 'Merriweather', bold;
+    font-size: 4.0em;
+    text-align: center;
+    font-weight: 600;
+    top: 84px;
+    z-index: 999;
+    text-shadow:#000 2px -2px, #000 -2px 2px, #000 2px 2px, #000 -2px -2px;
+}
+.posts-home {
+    width: 79%;
+    float: right;
+    margin-top: 10px;
+}
+
+.texto-post > h1 {
+    position: relative;
+    color: #fff;
+    font-family: 'Merriweather', bold;
+    font-size: 5.0em;
+    text-align: justify;
+    font-weight: 600;
+    z-index: 999;
+    top: -10px;
+    border-bottom: 1px solid #fff;
+}
+
+.centro-post > h1 {
+    position: relative;
+    color: #fff;
+    font-family: 'Merriweather', bold;
+    font-size: 5.0em;
+    text-align: justify;
+    font-weight: 600;
+    z-index: 999;
+    padding-bottom: 5px;
+}
+.centro-post img {
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+}
+.texto-post{
+    width: 64%;
+    float: left;
+    padding: 10px;
+}
+.posts-home p {
+    position: relative;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    text-align: justify;
+    z-index: 999;
+    top: 0px;
+}
+.data-publicacao {
+    color: #fff;
+    font-size: 1.9em;
+    float: right;
+}
+
+.btn-hq-preto {
+    color: #FFFF00 !important;
+    background: rgba(0, 0, 0, 0) !important;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Helvetica";
+    border: 1px solid #FFFF00;
+    transition: all 0.4s ease;
+    text-shadow: 0 0px 0 #000;
+}
+.btn-hq-preto:hover {
+    color: #000 !important;
+    background: #FFFF00 !important;
+    border: 1px solid #FFFF00 !important;
+}
+.centro-aside > h1 {
+    position: relative;
+    color: #fff;
+    font-family: 'Merriweather', bold;
+    font-size: 5.0em;
+    text-align: center;
+    font-weight: 600;
+    top: 0px;
+    z-index: 999;
+}
+.centro-aside {
+    width: 21%;
+    float: right;
+    margin-top: 10px;
+}
+.centro-post .item1 {
+    width: 35%;
+    float: left;
+    margin-top: 0px;
+}
+.conteudo-item {
+    margin-bottom: 20px;
+    float: left;
+}
+.row .item1 {
+    width: 100%;
+}
+.row h1 {
+    color: #fff;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 5.0em;
+}
+.row h2 {
+    color: #fff;
+    text-align: justify;
+}
+.row p {
+    color: #fff;
+    text-align: justify;
+    font-size: 2.0em;
+}
+.efetuar-login {
+    width: 58%;
+    float: right;
+}
+.item-login h1 {
+    color: #fff;
+    font-size: 2.0em;
+}
+.item-login {
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+    margin-top: -74px;
+}
+.efetuar-login > a {
+    width: 30%;
+    float: right;
+    margin-top: -33px;
+    margin-bottom: 19px;
+}
