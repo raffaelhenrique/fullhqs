@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ee63d47-547a-476f-9250-2660080cd161" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/conecta.php" afterPath="$PROJECT_DIR$/conecta.php" />
-    </list>
+    <list default="true" id="7ee63d47-547a-476f-9250-2660080cd161" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,12 +229,12 @@
       <workItem from="1513995683058" duration="4305000" />
       <workItem from="1514050688765" duration="323000" />
       <workItem from="1514069779988" duration="132000" />
-      <workItem from="1514086185248" duration="3459000" />
+      <workItem from="1514086185248" duration="3532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8219000" />
+    <option name="totallyTimeSpent" value="8292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="686" extended-state="6" />
