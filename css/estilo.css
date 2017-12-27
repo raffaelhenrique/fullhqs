@@ -338,6 +338,7 @@ ul > li > ul > li {
     top: 0;
     left: 0;
     bottom: 0;
+    display: flex;
 }
 .pushy-content i {
     font-size: 14px;
@@ -396,4 +397,12 @@ footer {
     margin-top: 100px;
     position: relative;
     bottom: 0;
+}
+.menu-deckstop{
+    width: 100%;
+    float: left;
+}
+
+.group-responsive{
+    display: none;
 }

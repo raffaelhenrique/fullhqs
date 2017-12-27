@@ -117,11 +117,11 @@
                             $foto = "imagens/imgs/" . $foto;
                        
                         echo"<div class='col-lg-3'>
-                        <div class='item1'>
+                        <div class='item1 post-home'>
                         <img class='img-circle' src='$foto' width='300' height='100' style='padding:0px;'>
                         <div class= 'item-overlay top'></div>
                         </div>
-                        <h2 style='margin-right: 100px; font-size: 30px; width: 100%;padding-left: 112px;'>$nome</h2>
+                        <h2 title='responsive' style='margin-right: 100px; font-size: 30px; width: 100%;padding-left: 112px;'>$nome</h2>
                         
                        
                         <p style='padding-left: 112px;'>

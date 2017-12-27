@@ -48,30 +48,30 @@ include "conecta.php";
     <body class="">
         <header class="cabeçalho">
             <div class="container">
-                <div class="logo">
-                    <a href="index.php">
-                        <img class="imglogo" src="imagens/logo.png">
-                    </a>
-                </div>
-                <div style="width: 250px;margin: 0;float: left;position: relative;top: 65px;left: 46px;">
-					<form name="buscador" method="post" action="index.php?pg=resultadobusca" novalidate>
-					<input id="Buscar" name="buscar" type="text" class="form-control" placeholder="Buscar"/>
-                    <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="float:right;margin-top:-34px;margin-right:-43px;"><i class="glyphicon glyphicon-search"></i></button>
-					</form>
-				</div>
-
-                    <div class="menu">
+                <div class="menu-deckstop">
+                    <div class="logo">
+                        <a href="index.php">
+                            <img class="imglogo" src="imagens/logo.png">
+                        </a>
+                    </div>
+                    <div style="width: 250px;margin: 0;float: left;position: relative;top: 65px;left: 46px;">
+                        <form name="buscador" method="post" action="index.php?pg=resultadobusca" novalidate>
+                        <input id="Buscar" name="buscar" type="text" class="form-control" placeholder="Buscar"/>
+                        <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="float:right;margin-top:-34px;margin-right:-43px;"><i class="glyphicon glyphicon-search"></i></button>
+                        </form>
+                    </div>
+                     <div class="menu">
                         <!-- EFETUAR O LOGIN -->
-						<?php 
+                        <?php 
                         //die('<pre>' . print_r($_SESSION['login'], true) . '</pre>');
-							if (isset($_SESSION['logado']) && ($_SESSION['logado'] == true)){
-								//se o usuario retornar verdadeiro , fazer o login com o nome de usuario com botao de sair.		
-								echo '<div class="item-login" style="float:right;"><h1><i class="glyphicon glyphicon-user"></i> '.ucfirst($_SESSION['login']).' - <a style="color:#fff;" href="./logoff.php" /><i class="glyphicon glyphicon-off"></i> Sair</a></h1></div>';
-								
-							}else{
-						?>
-					
-						
+                            if (isset($_SESSION['logado']) && ($_SESSION['logado'] == true)){
+                                //se o usuario retornar verdadeiro , fazer o login com o nome de usuario com botao de sair.     
+                                echo '<div class="item-login" style="float:right;"><h1><i class="glyphicon glyphicon-user"></i> '.ucfirst($_SESSION['login']).' - <a style="color:#fff;" href="./logoff.php" /><i class="glyphicon glyphicon-off"></i> Sair</a></h1></div>';
+                                
+                            }else{
+                        ?>
+                    
+                        
                         <form name="login" method="post" action="verificar.php" novalidate> 
                             <div class="efetuar-login">
                                 <div class="item-login">
@@ -85,9 +85,9 @@ include "conecta.php";
                                 <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="margin-left: 13px;margin-top: -30px; margin-bottom: 27px;">Efetuar Login</button>
                             </div>
                         </form>
-						<?php
-							}
-						?>
+                        <?php
+                            }
+                        ?>
                         <!-- MENU -->
                         <ul>
                             <li><a href="index.php">HOME</a></li>
@@ -160,6 +160,7 @@ include "conecta.php";
                         </ul>
                     </div>
                 </nav>
+                </div>
             </div>
             <!-- MENU RESPONSIVO -->
             <div class="group-responsive">
@@ -205,6 +206,7 @@ include "conecta.php";
                             ?>
                         </ul>
                     </li>
+                    <li class="pushy-link"><a href="?pg=efetuar-login-responsivo">EFETUAR LOGIN</a></li>
                     <li class="pushy-submenu">
                         <button>PERSONAGENS <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                         <ul>
