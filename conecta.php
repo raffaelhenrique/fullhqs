@@ -5,8 +5,13 @@
 		$servidor = "127.0.0.1";
 		$usuario = "root";
 		$senha = "";
-		$banco = "hq";  
-		$con = new PDO ( "mysql:host=$servidor;
+		$banco = "hq";
+
+//        $servidor = "localhost";
+//        $usuario = "root";
+//        $senha = "casaverde";
+//        $banco = "hq";
+        $con = new PDO ( "mysql:host=$servidor;
 			dbname=$banco;
 			charset=utf8",
 			$usuario,

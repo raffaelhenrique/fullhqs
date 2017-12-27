@@ -323,6 +323,59 @@ ul > li > ul > li {
     margin-top: 461px;
     margin-left: 61px;
 }
+.group-responsive{
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.buscador-responsivo{
+    width: 95%;
+    margin: 0;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+.pushy-content i {
+    font-size: 14px;
+    padding-left: 13px;
+}
+.button-item{
+    width: 73%;
+    padding: 50px 0;
+    padding-bottom: 0px;
+    float: left;
+    text-align: right;
+}
+.group-responsive .logo{
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.group-responsive .logo img{
+    width: 70%;
+    float: left;
+}
+button.menu-btn{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
+    background: #000;
+    color: #FFF;
+    text-align: right;
+    cursor: pointer;
+    border: 0px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+button.menu-btn:hover{
+    color: #FFFF00;
+}
 .alert.alert-success.font-alert {
     height: 50%;
     margin-bottom: auto;
@@ -344,4 +397,12 @@ footer {
     margin-top: 100px;
     position: relative;
     bottom: 0;
+}
+.menu-deckstop{
+    width: 100%;
+    float: left;
+}
+
+.group-responsive{
+    display: none;
 }

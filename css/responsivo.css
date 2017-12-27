@@ -1,4 +1,5 @@
 @media screen and (max-width: 1024px) {
+<<<<<<< HEAD
 
 	.centro-aside{
 		width: 100%;
@@ -16,6 +17,20 @@
 	.aside-home > a{
 	    width: 50%;
     float: left;
+	}
+
+	.menu-deckstop{
+		display: none;
+	}
+    .group-responsive{
+    display: flex;
+	}
+	.button-item{
+		width: 53%;
+	}
+	.buscador-responsivo > form{
+		margin: 0;
+    	width: 79%;
 	}
 }
 
@@ -56,6 +71,9 @@
 }
 
 @media screen and (max-width: 520px) {
+	.post-home > .img-circle{
+		width: 101px;
+	}
 
 }
 

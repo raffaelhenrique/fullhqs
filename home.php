@@ -117,7 +117,7 @@
                             $foto = "imagens/imgs/" . $foto;
                        
                         echo"<div class='col-lg-3'>
-                        <div class='item1'>
+                        <div class='item1 post-home'>
                         <img class='img-circle' src='$foto' width='300' height='100' style='padding:0px;'>
                         <div class= 'item-overlay top'></div>
                         </div>

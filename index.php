@@ -38,6 +38,7 @@ include "conecta.php";
         <link rel="stylesheet" type="text/css" href="css/responsivo.css">
         <link rel="stylesheet" type="text/css" href="colorbox.css">
         <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/pushy.css">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -47,30 +48,30 @@ include "conecta.php";
     <body class="">
         <header class="cabeçalho">
             <div class="container">
-                <div class="logo">
-                    <a href="index.php">
-                        <img class="imglogo" src="imagens/logo.png">
-                    </a>
-                </div>
-                <div style="width: 250px;margin: 0;float: left;position: relative;top: 65px;left: 46px;">
-					<form name="buscador" method="post" action="index.php?pg=resultadobusca" novalidate>
-					<input id="Buscar" name="buscar" type="text" class="form-control" placeholder="Buscar"/>
-                    <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="float:right;margin-top:-34px;margin-right:-43px;"><i class="glyphicon glyphicon-search"></i></button>
-					</form>
-				</div>
-
-                    <div class="menu">
+                <div class="menu-deckstop">
+                    <div class="logo">
+                        <a href="index.php">
+                            <img class="imglogo" src="imagens/logo.png">
+                        </a>
+                    </div>
+                    <div style="width: 250px;margin: 0;float: left;position: relative;top: 65px;left: 46px;">
+                        <form name="buscador" method="post" action="index.php?pg=resultadobusca" novalidate>
+                        <input id="Buscar" name="buscar" type="text" class="form-control" placeholder="Buscar"/>
+                        <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="float:right;margin-top:-34px;margin-right:-43px;"><i class="glyphicon glyphicon-search"></i></button>
+                        </form>
+                    </div>
+                     <div class="menu">
                         <!-- EFETUAR O LOGIN -->
-						<?php 
+                        <?php 
                         //die('<pre>' . print_r($_SESSION['login'], true) . '</pre>');
-							if (isset($_SESSION['logado']) && ($_SESSION['logado'] == true)){
-								//se o usuario retornar verdadeiro , fazer o login com o nome de usuario com botao de sair.		
-								echo '<div class="item-login" style="float:right;"><h1><i class="glyphicon glyphicon-user"></i> '.ucfirst($_SESSION['login']).' - <a style="color:#fff;" href="./logoff.php" /><i class="glyphicon glyphicon-off"></i> Sair</a></h1></div>';
-								
-							}else{
-						?>
-					
-						
+                            if (isset($_SESSION['logado']) && ($_SESSION['logado'] == true)){
+                                //se o usuario retornar verdadeiro , fazer o login com o nome de usuario com botao de sair.     
+                                echo '<div class="item-login" style="float:right;"><h1><i class="glyphicon glyphicon-user"></i> '.ucfirst($_SESSION['login']).' - <a style="color:#fff;" href="./logoff.php" /><i class="glyphicon glyphicon-off"></i> Sair</a></h1></div>';
+                                
+                            }else{
+                        ?>
+                    
+                        
                         <form name="login" method="post" action="verificar.php" novalidate> 
                             <div class="efetuar-login">
                                 <div class="item-login">
@@ -84,9 +85,9 @@ include "conecta.php";
                                 <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="margin-left: 13px;margin-top: -30px; margin-bottom: 27px;">Efetuar Login</button>
                             </div>
                         </form>
-						<?php
-							}
-						?>
+                        <?php
+                            }
+                        ?>
                         <!-- MENU -->
                         <ul>
                             <li><a href="index.php">HOME</a></li>
@@ -159,49 +160,88 @@ include "conecta.php";
                         </ul>
                     </div>
                 </nav>
+                </div>
             </div>
             <!-- MENU RESPONSIVO -->
-            <button class="menu-btn">&#9776; Menu</button>
+            <div class="group-responsive">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.php">
+                            <img class="imglogo" src="imagens/logo.png">
+                        </a>
+                    </div>
+                    <div class="button-item">
+                        <button class="menu-btn">&#9776; Menu</button>
+                    </div>
+                    <div class="buscador-responsivo">
+                        <form name="buscador" method="post" action="index.php?pg=resultadobusca" novalidate>
+                            <input id="Buscar" name="buscar" type="text" class="form-control" placeholder="Buscar"/>
+                            <button class="btn btn-default btn-hq-preto" action="login" type="submit" style="float:right;margin-top:-34px;margin-right:-43px;"><i class="glyphicon glyphicon-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
              <!-- Pushy Menu -->
         <nav class="pushy pushy-left" data-focus="#first-link">
             <div class="pushy-content">
                 <ul>
                     <li class="pushy-submenu">
-                        <button id="first-link">Submenu 1</button>
-                        <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
-                        </ul>
+                        <button id="first-link" href="index.php">Home</button>
                     </li>
                     <li class="pushy-submenu">
-                        <button>Submenu 2</button>
+                        <button>HQS <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                         <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                            <?php
+                            $sql = "select * from editora order by nome";
+                            $consulta = $con->prepare($sql);
+                            // execute o sql
+                            $consulta->execute();
+                            while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
+                                // separa os dados
+                                $id = $dados->id;
+                                $nome = $dados->nome;
+                                echo "<li><a href='?pg=editora&id=$id'>$nome</a></li>";
+                            }
+
+                            ?>
                         </ul>
                     </li>
+                    <li class="pushy-link"><a href="?pg=efetuar-login-responsivo">EFETUAR LOGIN</a></li>
                     <li class="pushy-submenu">
-                        <button>Submenu 3</button>
+                        <button>PERSONAGENS <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                         <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                            <?php
+                            $sql = "select * from editora order by nome";
+                            $consulta = $con->prepare($sql);
+                            // execute o sql
+                            $consulta->execute();
+                            while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
+                                // separa os dados
+                                $id = $dados->id;
+                                $nome = $dados->nome;
+                                echo "<li><a href='?pg=editorapersonagens&id=$id'>$nome</a></li>";
+                            }
+
+                            ?>
                         </ul>
                     </li>
+                    <li class="pushy-link"><a href="?pg=post">POST</a></li>
+                    <li class="pushy-link"><a href="?pg=autor">AUTOR</a></li>
+                    <li class="pushy-link"><a href="?pg=noticia">NOTICIAS</a></li>
+                    <li class="pushy-link"><a href="?pg=cadastro">CADASTRO</a></li>
+                    <li class="pushy-link"><a href="?pg=contato">CONTATO</a></li>
                     <li class="pushy-submenu">
-                        <button>Submenu 4</button>
+                        <button>RANKING <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                         <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                            <?php
+                            echo "<li><a href='?pg=rankingpersonagens'>Personagens</a></li>";
+                            ?>
+                            <?php
+                            echo "<li><a href='?pg=rankinghqs'>HQS</a></li>";
+                            ?>
+
                         </ul>
                     </li>
-                    <li class="pushy-link"><a href="#">Item 1</a></li>
-                    <li class="pushy-link"><a href="#">Item 2</a></li>
-                    <li class="pushy-link"><a href="#">Item 3</a></li>
-                    <li class="pushy-link"><a href="#">Item 4</a></li>
                 </ul>
             </div>
         </nav>
@@ -243,7 +283,8 @@ include "conecta.php";
 
 
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="js/pushy.min.js"></script>
+        <script type="text/javascript" src="js/pushy.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
